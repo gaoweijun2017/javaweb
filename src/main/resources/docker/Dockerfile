@@ -27,7 +27,7 @@ ENV CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 WORKDIR /usr/tomcat/webapps/ROOT
 #删除tomcat默认的项目文
 #将自己的xxx.war系统添加到docker镜像中tomcat下的ROOT目录下
-ADD webapp /usr/tomcat/webapps/webapp
+ADD stu.war /usr/tomcat/webapps/stu.war
 #公布tomcat的9999端口
 EXPOSE 9999
 #启动tomcat
